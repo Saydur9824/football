@@ -24,6 +24,7 @@ main{
     width: 119px;
     height: 177px;
     font-size: 31px;
+    color: cyan;
 }
 .thumbnail img{
     width: 455px;
@@ -82,9 +83,36 @@ main{
     margin: 10px;
 }
 p{
-    font-size: 10px;
+    font-size: 11px;
 }
+/* lpgo */
+.logo img{
+    width: 250px;
+    
+    margin-left: 5px;
+    margin-top: 26px;
+}
+/* icon */
+.icon{
+    display: flex;
+    width: 140px;
+    height: 30px;
+    justify-content: space-between;
+}
+.insta ,.twiter, .ball, .youtube{
+    background-color: cadetblue;
+    border-radius: 31px;
+    width:26px;
+    height: 25px;
 
+}
+.fab, .fas{
+    margin-left: 5px;
+}
+/* footer */
+.footer {
+    margin: 15px 0 32px;
+}
 
 
 
