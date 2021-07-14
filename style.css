@@ -164,17 +164,56 @@ table {
     background-color: royalblue;
   }
   
-  @media (max-width: 800px) {
-    .form-inline input {
-      margin: 10px 0;
-    }
-    
-    .form-inline {
-      flex-direction: column;
-      align-items: stretch;
-    }
-  }
-
-
-
  
+
+
+  /* media Queries */
+  /* mobile devices */
+  @media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner .thumbnail img {
+        width: 194px;
+        height: 125px;
+        margin-top: 45px;
+        margin-bottom: -120px;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* grid-gap: 10px;
+        align-items: center;
+        justify-content: center;
+     */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    td,th{
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        height: 41px;
+        width: 6px;
+    
+    }   
+    .form-line h2, p{
+        
+     text-align: center;  
+    }
+
+    .form-inline input {
+        margin: 5px 0;
+      }
+      
+      .form-inline {
+        flex-direction: column;
+        align-items: center;
+      }
+}
