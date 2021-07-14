@@ -4,6 +4,8 @@
 /* common style */
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
 }
 main{
     display: flex;
@@ -51,16 +53,11 @@ main{
 }
 
 /* playrs style */
-/* .all-players{
-    background-color: rgb(48, 34, 17);
-} */
+
 .players{
-    /* background-color: #c0a8a8; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /* grid-row-gap: 14px;
-    grid-column-gap: 16px; */
-    grid-gap: 8px;
+    grid-gap: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -70,7 +67,8 @@ main{
     flex-direction: column;
     align-items: center;
     width: 261px;
-    height: 428px;
+    height: 390px;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 25%);
     
 
 
@@ -81,6 +79,7 @@ main{
 }
 .top-player{
     margin: 10px;
+    margin-top: -32px;
 }
 p{
     font-size: 11px;
@@ -115,4 +114,67 @@ p{
 }
 
 
+/* table style */
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  
+
+
+  /* from style */
+
+
+  .form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-inline button:hover {
+    background-color: royalblue;
+  }
+  
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+    
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+
+
+ 
